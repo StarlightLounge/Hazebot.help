@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haze Bot | The Elite Discord Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="elysium_logo.svg" alt="Haze Bot Logo">
+                    <span>HAZE BOT</span>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#economy">Districts</a></li>
+                        <li><a href="help.html">Documentation</a></li>
+                        <li><a href="#premium">Premium</a></li>
+                        <li><a href="#support" class="nav-btn">Support Portal</a></li>
+                    </ul>
+                    <div class="hamburger" id="mobile-menu-btn">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#economy">Districts</a>
+            <a href="help.html">Documentation</a>
+            <a href="#premium">Premium</a>
+            <a href="#support">Support Portal</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="btn btn-primary">Add to Discord</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-text reveal">
+                <span class="badge">V2.8 NOW LIVE</span>
+                <h1>Elevate Your Server to the <span>Elite Elysium</span></h1>
+                <p>The all-in-one Discord bot featuring a neural AI concierge, metabolic leveling, and a high-stakes economy. Trusted by thousands of top-tier communities.</p>
+                <div class="hero-btns">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="btn btn-primary">Add to Discord</a>
+                    <a href="#" class="btn btn-secondary">Join Community</a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <img src="elysium_logo.svg" alt="Haze Bot Logo" class="floating">
+            </div>
+        </div>
+    </header>
+
+    <div class="district-nav-wrapper">
+        <div class="container">
+            <div class="district-nav">
+                <a href="#economy">🌿 ECONOMY</a>
+                <a href="#rpg">🐉 RPG & PETS</a>
+                <a href="#multimedia">🔊 MULTIMEDIA</a>
+                <a href="#social">🎰 RISK & SOCIAL</a>
+                <a href="#security">🛡️ SECURITY</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="trust-banner">
+        <div class="container">
+            <p>TRUSTED BY TOP-TIER COMMUNITIES</p>
+            <div class="logo-cloud">
+                <div class="cloud-item"><span>✦</span> LUMINA</div>
+                <div class="cloud-item"><span>✦</span> NEXUS</div>
+                <div class="cloud-item"><span>✦</span> VORTEX</div>
+                <div class="cloud-item"><span>✦</span> AETHER</div>
+                <div class="cloud-item"><span>✦</span> ZENITH</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-item reveal">
+                <h3 id="live-server-count">1,200+</h3>
+                <p>Active Servers</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3 id="live-user-count">45,000+</h3>
+                <p>Synchronized Users</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3 id="live-influence-harvested">1.2M</h3>
+                <p>Influence Harvested</p>
+            </div>
+            <div class="stat-item reveal">
+                <h3 id="live-uptime">99.9%</h3>
+                <p>Neural Uptime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISTRICT: ECONOMY -->
+    <section id="economy" class="district section-alt">
+        <div class="container">
+            <div class="district-header reveal">
+                <span class="badge">ECONOMY DISTRICT</span>
+                <h2>Sovereign Growth & <span>Identity</span></h2>
+                <p>Build your fortune and customize your digital presence with our high-end economic protocols.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">💳</div>
+                    <h3>Visual Identity</h3>
+                    <p>Use **`/card`** to generate a stunning visual Membership ID image, showcasing your Avatar, Tier, and Influence to the entire Singularity.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🌿</div>
+                    <h3>The Exchange</h3>
+                    <p>Harvest Influence daily, trade rare seeds, and cultivate your wealth within a balanced, deep social economy.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🛍️</div>
+                    <h3>The Boutique</h3>
+                    <p>Browse exclusive high-end assets in **`/shop`**. Synchronize your stash with fertilizers, blueprints, and prestige badges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISTRICT: RPG -->
+    <section id="rpg" class="district">
+        <div class="container">
+            <div class="split-row reveal">
+                <div class="split-text">
+                    <span class="badge">RPG & CULTIVATION</span>
+                    <h2>Venture into <span>The Void</span></h2>
+                    <p>Send your avatar on automated expeditions or cultivate a sentient strain. Haze Bot brings deep RPG mechanics to your server.</p>
+                    <ul class="check-list">
+                        <li>✦ **`/expedition`**: Send your node to harvest rare void loot.</li>
+                        <li>✦ **`/hazedex`**: Complete your global encyclopedia of strains.</li>
+                        <li>✦ **`/cultivate`**: Initialize and tend to a sentient virtual pet.</li>
+                    </ul>
+                </div>
+                <div class="split-visual">
+                    <div class="feature-card" style="margin: 0; background: #111;">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Sentient Cultivation</h3>
+                        <p>Buy a Sentient Seed and interact with it daily. Fully grown strains grant permanent XP and Global Luck multipliers to your profile.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISTRICT: MULTIMEDIA -->
+    <section id="multimedia" class="district section-alt">
+        <div class="container">
+            <div class="district-header reveal">
+                <span class="badge">MULTIMEDIA & TRANSLATION</span>
+                <h2>Universal <span>Synchronization</span></h2>
+                <p>High-fidelity audio meets artificial intelligence. Bridge the gap between languages and audio frequencies.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔊</div>
+                    <h3>Soundstage Pro</h3>
+                    <p>A professional interactive HUD with shuffle and radio mode. Premium nodes enjoy high-fidelity 192k audio streaming.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Tower of Babel</h3>
+                    <p>Context-aware translation using Gemini AI. Translate messages via context menu or designate entire auto-translation channels.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🎙️</div>
+                    <h3>Babel Link</h3>
+                    <p>A real-time Voice-to-TTS bridge. Type in your native language, and the bot will speak perfect translations to your VC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISTRICT: RISK & SOCIAL -->
+    <section id="social" class="district">
+        <div class="container">
+            <div class="split-row reveal">
+                <div class="split-visual">
+                    <div class="feature-card" style="margin: 0; background: #111; border-color: var(--primary-gold);">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Global Supremacy</h3>
+                        <p>Compare your neural frequency against the entire Singularity. **`/global_top`** tracks the richest and highest-tier users across all servers.</p>
+                    </div>
+                </div>
+                <div class="split-text">
+                    <span class="badge">RISK & SOCIAL HUB</span>
+                    <h2>The <span>Social Singularity</span></h2>
+                    <p>High-stakes competition meets community celebration. Engage your members with exclusive server-wide events.</p>
+                    <ul class="check-list">
+                        <li>✦ **High-Vibe Board**: Automatically pin top community memes.</li>
+                        <li>✦ **Haze Clouds**: Communal server-wide jackpot events.</li>
+                        <li>✦ **High Stakes Haze**: Exclusive card-battle gambling.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISTRICT: SECURITY -->
+    <section id="security" class="district section-alt">
+        <div class="container">
+            <div class="district-header reveal">
+                <span class="badge">SOVEREIGN SECURITY</span>
+                <h2>Surgical <span>Governance</span></h2>
+                <p>Enterprise-grade server management. Haze Bot is the only tool you need to govern your community hub.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Sentinel Protocol</h3>
+                    <p>Advanced anti-spam, invite-blocking, and surgical **`/nuke`** commands. Replaces the need for dedicated moderation bots.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🛰️</div>
+                    <h3>Neural Audit Logs</h3>
+                    <p>Track every frequency shift. Beautifully formatted logs for message edits, deletions, and administrative mandates.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🏗️</div>
+                    <h3>1-Click Infrastructure</h3>
+                    <p>Deploy professional Support Hubs or full server protocols instantly. Automated ticket systems and role hierarchies included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="premium" class="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Tiered Synchronization</h2>
+                <p>Choose the level of protocol that fits your community needs.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <h3>Free Protocol</h3>
+                    <div class="price">$0<span>/mo</span></div>
+                    <ul class="plan-features">
+                        <li>✦ Basic Sovereign AI</li>
+                        <li>✦ Exchange Economy</li>
+                        <li>✦ Standard Leveling</li>
+                        <li>✦ Community Support</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="btn btn-secondary">Initialize Free</a>
+                </div>
+                <div class="pricing-card featured reveal">
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <h3>Elite Premium</h3>
+                    <div class="price">$4.99<span>/mo</span></div>
+                    <ul class="plan-features">
+                        <li>✦ Advanced Neural AI</li>
+                        <li>✦ Premium Gamble Modules</li>
+                        <li>✦ Custom Role Syncing</li>
+                        <li>✦ Priority Support District</li>
+                        <li>✦ White-label Options</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Ascend to Elite</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="support-portal">
+        <div class="container">
+            <div class="support-card reveal">
+                <div class="support-header">
+                    <h2>Web Support Portal</h2>
+                    <p>Can't access Discord? Open a ticket directly from here and our staff will handle the rest.</p>
+                </div>
+                <form id="ticket-form" class="support-form">
+                    <div class="form-group">
+                        <label>Discord Username</label>
+                        <input type="text" id="username" placeholder="e.g. hazy_user#0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Issue Category</label>
+                        <select id="category">
+                            <option value="General Support">General Support</option>
+                            <option value="Bug Report">Bug Report</option>
+                            <option value="Economy Issue">Economy Issue</option>
+                            <option value="Premium Inquiry">Premium Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Detailed Message</label>
+                        <textarea id="message" rows="5" placeholder="Describe your issue in detail..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Initialize Web Ticket</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-card reveal">
+                <h2>Ready to stabilize your frequency?</h2>
+                <p>Join thousands of servers already using the Haze Bot protocol.</p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="btn btn-primary">Add to Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="elysium_logo.svg" alt="Haze Bot Logo">
+                        <span>HAZE BOT</span>
+                    </div>
+                    <p>High frequencies. Quality over Quantity.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="#economy">Districts</a>
+                        <a href="help.html">Documentation</a>
+                        <a href="#premium">Premium</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="https://github.com">GitHub</a>
+                        <a href="https://discord.gg/TFC7YdumkF">Support Server</a>
+                        <a href="help.html">Full Command List</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="https://www.twitch.tv/iitzlunartv">Twitch</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Status</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Elysium. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

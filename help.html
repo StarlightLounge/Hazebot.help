@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haze Bot Documentation | Elite Elysium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .docs-container { display: grid; grid-template-columns: 250px 1fr; gap: 4rem; padding-top: 12rem; padding-bottom: 10rem; }
+        .docs-sidebar { position: sticky; top: 12rem; height: max-content; }
+        .docs-sidebar h4 { font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 2px; color: var(--primary-gold); margin-bottom: 1.5rem; text-transform: uppercase; }
+        .docs-sidebar ul { list-style: none; }
+        .docs-sidebar li { margin-bottom: 1rem; }
+        .docs-sidebar a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: var(--transition); }
+        .docs-sidebar a:hover, .docs-sidebar a.active { color: var(--text-white); }
+        
+        .docs-content section { margin-bottom: 6rem; scroll-margin-top: 12rem; }
+        .docs-content h1 { font-size: 3.5rem; margin-bottom: 1.5rem; letter-spacing: -2px; }
+        .docs-content h2 { font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        .docs-content p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.8; }
+        
+        .command-ref { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
+        .command-ref code { color: var(--primary-gold); font-weight: 700; font-size: 1.1rem; }
+        .command-ref .desc { color: var(--text-white); margin-top: 0.5rem; display: block; }
+        
+        @media (max-width: 992px) {
+            .docs-container { grid-template-columns: 1fr; }
+            .docs-sidebar { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="elysium_logo.svg" alt="Haze Bot Logo">
+                    <span>HAZE BOT</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#support">Support Portal</a></li>
+                <li><a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="nav-btn">Add Bot</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container docs-container">
+        <aside class="docs-sidebar">
+            <h4>Documentation</h4>
+            <ul>
+                <li><a href="#getting-started" class="active">Getting Started</a></li>
+                <li><a href="#economy">The Exchange (Economy)</a></li>
+                <li><a href="#ai-concierge">Sovereign AI</a></li>
+                <li><a href="#leveling">Astral Ascension</a></li>
+                <li><a href="#commands">Full Command List</a></li>
+            </ul>
+        </aside>
+
+        <article class="docs-content">
+            <section id="getting-started">
+                <h1>Getting Started</h1>
+                <p>Welcome to the Elite Elysium protocol. Haze Bot is designed to be the ultimate companion for your Discord community, blending advanced AI with a deeply engaging social economy.</p>
+                <h2>Quick Setup</h2>
+                <p>To initialize the bot in your server, ensure you have the Administrator permission and use the following command:</p>
+                <div class="command-ref">
+                    <code>/setup_elysium</code>
+                    <span class="desc">The definitive server transformation command. Purges existing channels/roles and rebuilds the Elysium infrastructure.</span>
+                </div>
+                <p>Alternatively, for a focused support environment:</p>
+                <div class="command-ref">
+                    <code>/setup_support</code>
+                    <span class="desc">Deploys a professional Support Hub with a live ticket system and staff roles.</span>
+                </div>
+            </section>
+
+            <section id="economy">
+                <h2>The Exchange</h2>
+                <p>The Exchange is the heart of the Haze Bot economy. Users can harvest Influence, trade rare seeds, and manage their status within the community.</p>
+                <div class="command-ref">
+                    <code>/harvest</code>
+                    <span class="desc">Gather Influence from your current cultivation.</span>
+                </div>
+                <div class="command-ref">
+                    <code>/boutique</code>
+                    <span class="desc">Browse the exclusive shop for rare seeds, roles, and upgrades.</span>
+                </div>
+                <div class="command-ref">
+                    <code>/trade</code>
+                    <span class="desc">Exchange Influence or items with other members of the Elysium.</span>
+                </div>
+            </section>
+
+            <section id="ai-concierge">
+                <h2>Sovereign AI Concierge</h2>
+                <p>Powered by neural network protocols, the Sovereign Concierge is your direct link to the bot's intelligence.</p>
+                <div class="command-ref">
+                    <code>/plug [thought]</code>
+                    <span class="desc">Consult with the AI. Ask questions, get vibe checks, or automate complex server tasks.</span>
+                </div>
+                <p>The AI also performs automatic "Vibe Checks" in your DMs when you first join the server to ensure frequency alignment.</p>
+            </section>
+
+            <section id="leveling">
+                <h2>Astral Ascension</h2>
+                <p>Our metabolic leveling system rewards quality interactions. As you participate in the community, you earn XP and ascend through tiered prestige roles.</p>
+                <ul>
+                    <li><strong>Tier 1-10:</strong> New Bud & Citizen Stoner</li>
+                    <li><strong>Tier 30+:</strong> Elite Smoker</li>
+                    <li><strong>Tier 100:</strong> Eternal O.G.</li>
+                </ul>
+            </section>
+
+            <section id="commands">
+                <h2>Command Manifesto</h2>
+                <div class="command-ref">
+                    <code>/profile</code>
+                    <span class="desc">View your Digital Membership Card and level progress.</span>
+                </div>
+                <div class="command-ref">
+                    <code>/explore</code>
+                    <span class="desc">RPG Module: Search the void for rare strains and artifacts.</span>
+                </div>
+                <div class="command-ref">
+                    <code>/play [query]</code>
+                    <span class="desc">Sync the Soundstage with high-fidelity audio from YouTube/SoundCloud.</span>
+                </div>
+                <div class="command-ref">
+                    <code>/prestige</code>
+                    <span class="desc">Transcend to the next tier of existence upon reaching max level.</span>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Elysium. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
