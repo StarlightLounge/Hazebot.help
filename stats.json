@@ -1,5 +1,22 @@
 {
-  "serverCount": 1200,
-  "userCount": 45000,
-  "influenceHarvested": "1.2M"
+  "serverCount": 6,
+  "userCount": 333,
+  "influenceHarvested": "1.5M+",
+  "activeSoundstages": 0,
+  "globalPlaylists": [
+    {
+      "name": "test",
+      "tracks": 3
+    },
+    {
+      "name": "white gurl bangers",
+      "tracks": 1
+    }
+  ],
+  "telemetry": {
+    "status": "OFFLINE",
+    "cpu": "0%",
+    "ram": "0MB",
+    "uptime": "0h 0m"
+  }
 }
