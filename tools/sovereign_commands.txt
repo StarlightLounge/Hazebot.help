@@ -1,0 +1,81 @@
+# ⚜️ ELITE ELYSIUM: SOVEREIGN COMMAND MANIFESTO
+
+This document serves as the definitive technical reference for all Sovereign frequencies and bot interactions within the Elysium.
+
+===============================================================================
+◈ [ INITIALIZATION & MANAGEMENT ]
+===============================================================================
+
+/setup_elysium     : One-Click initialization of the Elite Elysium protocol. (Destructive)
+/role_all          : Execute a Sovereign Mandate to assign a role to ALL members.
+/appoint_staff     : Officially appoint a member to the staff hierarchy (Architect, Arbiter, Core).
+/open_frequency    : Establish a new Sovereign voice connection with optional Level Locking.
+/plug              : Directly consult with the Sovereign Concierge AI for high-level thoughts.
+
+===============================================================================
+◈ [ ASCENSION & STATUS ]
+===============================================================================
+
+/profile           : Access your Digital Membership Card and check status/Influence.
+/leaderboard       : View the top-tier members of the Sovereign Singularity.
+/prestige          : Reset your Tier and transcend to a higher plane of existence (Requires LV 100).
+/help              : Display the standard frequency list.
+/ping              : Measure the bot's neural latency.
+
+===============================================================================
+◈ [ THE EXCHANGE (Economy) ]
+===============================================================================
+
+/daily             : Harvest your daily allocation of Influence.
+/shop              : Browse the Boutique for seeds, fertilizers, and rare items.
+/buy               : Purchase high-end assets from the Boutique.
+/inventory         : Inspect your current stash and assets.
+/use               : Utilize an item from your inventory.
+/give              : Transfer Influence to another subject.
+/trade_smoke       : Conduct peer-to-peer trades within the Trade Hub.
+
+===============================================================================
+◈ [ THE HIGH-ROLLER DEN (Gambling) ]
+===============================================================================
+
+/slots             : Wager Influence on the automated slot machines.
+/blackjack         : Engage in a classic card duel against the House.
+/roulette          : Place bets on the wheel of fate.
+/coinflip          : High-speed binary wager.
+/high_stakes_haze  : The ultimate stoner card game. (Noble+ recommended)
+
+===============================================================================
+◈ [ EXPEDITION & ENTERTAINMENT ]
+===============================================================================
+
+/explore           : Search for rare strains and items in the uncharted void.
+/catch             : Capture active smoke spawns during your expeditions.
+/hazedex           : View your collection of rare strains and artifacts.
+/smoke_off         : Battle other members using your HazeDex collection.
+/play              : Sync the Soundstage with YouTube or SoundCloud audio.
+/skip              : Move to the next audio frequency.
+/leave             : Disconnect the bot from the current voice connection.
+
+===============================================================================
+◈ [ SOVEREIGN MODERATION ]
+===============================================================================
+
+/purge             : Surgically remove low-quality message frequencies.
+/kick              : Expel a subject from the Elysium.
+/ban               : Permanently isolate a subject from the Singularity.
+/add_role          : Manually grant a role to a subject.
+/remove_role       : Manually strip a role from a subject.
+/set_autorole      : Configure the automatic frequency for new subjects.
+
+===============================================================================
+◈ [ GOD MODE (Owner Only) ]
+===============================================================================
+
+/admin_add_hash_coins : Direct influence injection.
+/admin_set_puffs      : Modify a user's biological puff count.
+/announce             : Broadcast a Sovereign Mandate across all synced servers.
+/admin_servers        : View all servers currently linked to the Singularity.
+
+===============================================================================
+◈ THE SOVEREIGN PROTOCOL: QUALITY OVER QUANTITY.
+===============================================================================

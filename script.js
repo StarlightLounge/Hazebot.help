@@ -19,6 +19,30 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data.influenceHarvested) {
                 document.getElementById('live-influence-harvested').textContent = data.influenceHarvested;
             }
+
+            // --- MUSIC DASHBOARD RENDER ---
+            if (data.activeSoundstages !== undefined) {
+                document.getElementById('live-music-sessions').textContent = data.activeSoundstages;
+            }
+
+            if (data.globalPlaylists) {
+                const list = document.getElementById('global-playlist-list');
+                list.innerHTML = ""; // Clear loader
+                
+                data.globalPlaylists.forEach(p => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <div class="playlist-info">
+                            <span class="p-name">🎵 ${p.name.toUpperCase()}</span>
+                            <span class="p-tracks">${p.tracks} Frequencies</span>
+                        </div>
+                        <div class="p-visual">
+                            <div class="p-bar"></div>
+                        </div>
+                    `;
+                    list.appendChild(li);
+                });
+            }
         } catch (err) {
             console.log("Using static fallback stats.");
         }
@@ -111,28 +135,30 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = document.getElementById('category').value;
             const message = document.getElementById('message').value;
 
-            formStatus.textContent = "🛰️ Synchronizing ticket with neural network...";
+            formStatus.textContent = "🛰️ Transmitting ticket to staff frequencies...";
             formStatus.style.color = "var(--primary-gold)";
 
-            // REPLACE THIS WITH YOUR DISCORD WEBHOOK URL
-            const WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL_HERE";
+            // ⚠️ HIGH ARCHITECT: PASTE YOUR DISCORD WEBHOOK URL BELOW ⚠️
+            const WEBHOOK_URL = "https://discord.com/api/webhooks/1512570083740880906/llpi9fAZ-8sC-3b92OE98_IbIgbFozVQIJ7D85se_Uyq_lrTWOKiQC7AalXMPxJmwiYi";
 
             if (WEBHOOK_URL === "YOUR_DISCORD_WEBHOOK_URL_HERE") {
-                formStatus.textContent = "❌ Error: Webhook URL not configured. (Staff: Update script.js)";
+                formStatus.textContent = "❌ Neural Error: Webhook missing. Join the Discord manually.";
                 formStatus.style.color = "#ff4d4d";
                 return;
             }
 
             const payload = {
+                // If you want to ping a specific role (like Support), put its ID here: "<@&ROLE_ID_HERE>"
+                content: "🚨 **New Web Ticket Received**", 
                 embeds: [{
-                    title: "🎫 NEW WEB TICKET",
+                    title: "🎫 WEB SUPPORT TICKET",
                     color: 16627761, // Gold
                     fields: [
-                        { name: "👤 User", value: `\`${username}\``, inline: true },
-                        { name: "📂 Category", value: `\`${category}\``, inline: true },
-                        { name: "📝 Message", value: message }
+                        { name: "👤 Discord Username", value: `\`${username}\``, inline: true },
+                        { name: "📂 Issue Category", value: `**${category.toUpperCase()}**`, inline: true },
+                        { name: "📝 Transmission", value: `>>> ${message}`, inline: false }
                     ],
-                    footer: { text: "Haze Bot Web Support Portal" },
+                    footer: { text: "Elite Elysium | Web Portal" },
                     timestamp: new Date().toISOString()
                 }]
             };
@@ -145,15 +171,128 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    formStatus.textContent = "✅ Ticket initialized. Our staff will reach out on Discord.";
-                    formStatus.style.color = "#2ecc71";
+                    formStatus.textContent = "✅ Ticket securely transmitted. A staff member will DM you.";
+                    formStatus.style.color = "#00FFCC";
                     ticketForm.reset();
                 } else {
                     throw new Error();
                 }
             } catch (err) {
-                formStatus.textContent = "❌ Neural Link Failed. Please join our Discord server directly.";
+                formStatus.textContent = "❌ Transmission blocked. Please join the Discord to open a ticket.";
                 formStatus.style.color = "#ff4d4d";
+            }
+        });
+    }
+
+    // Handle Developer Application Form
+    const devForm = document.getElementById('dev-form');
+    const devFormStatus = document.getElementById('dev-form-status');
+
+    if (devForm) {
+        devForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const username = document.getElementById('dev-username').value;
+            const role = document.getElementById('dev-role').value;
+            const portfolio = document.getElementById('dev-portfolio').value || "Not Provided";
+            const experience = document.getElementById('dev-experience').value;
+
+            devFormStatus.textContent = "🛰️ Transmitting application to High Architects...";
+            devFormStatus.style.color = "#2ecc71";
+
+            // ⚠️ HIGH ARCHITECT: PASTE YOUR DEV APPLICATION WEBHOOK URL BELOW ⚠️
+            // You can use the same webhook as support, or create a new one for a #dev-applications channel
+            const DEV_WEBHOOK_URL = "https://discord.com/api/webhooks/1512570083740880906/llpi9fAZ-8sC-3b92OE98_IbIgbFozVQIJ7D85se_Uyq_lrTWOKiQC7AalXMPxJmwiYi";
+
+            if (DEV_WEBHOOK_URL === "YOUR_DEV_WEBHOOK_URL_HERE") {
+                devFormStatus.textContent = "❌ Neural Error: Webhook missing. Join the Discord manually.";
+                devFormStatus.style.color = "#ff4d4d";
+                return;
+            }
+
+            const payload = {
+                content: "🛠️ **New Cultivator Application Received**", 
+                embeds: [{
+                    title: "💻 DEVELOPER APPLICATION",
+                    color: 3066993, // Green
+                    fields: [
+                        { name: "👤 Discord Username", value: `\`${username}\``, inline: true },
+                        { name: "🎯 Primary Discipline", value: `**${role}**`, inline: true },
+                        { name: "🔗 Portfolio / GitHub", value: portfolio, inline: false },
+                        { name: "📝 Experience & Motivation", value: `>>> ${experience}`, inline: false }
+                    ],
+                    footer: { text: "Elite Elysium | Recruitment Protocol" },
+                    timestamp: new Date().toISOString()
+                }]
+            };
+
+            try {
+                const response = await fetch(DEV_WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (response.ok) {
+                    devFormStatus.textContent = "✅ Application successfully transmitted. We will contact you soon.";
+                    devFormStatus.style.color = "#2ecc71";
+                    devForm.reset();
+                } else {
+                    throw new Error();
+                }
+            } catch (err) {
+                devFormStatus.textContent = "❌ Transmission blocked. Please join the Discord to apply.";
+                devFormStatus.style.color = "#ff4d4d";
+            }
+        });
+    }
+
+    // Handle Music Controller Form
+    const musicForm = document.getElementById('music-form');
+    const musicFormStatus = document.getElementById('music-form-status');
+
+    if (musicForm) {
+        musicForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const username = document.getElementById('music-username').value;
+            const query = document.getElementById('music-query').value;
+
+            musicFormStatus.textContent = "🛰️ Connecting to Soundstage...";
+            musicFormStatus.style.color = "#1db954";
+
+            // ⚠️ HIGH ARCHITECT: PASTE YOUR DISCORD WEBHOOK URL BELOW ⚠️
+            const MUSIC_WEBHOOK_URL = "https://discord.com/api/webhooks/1512570083740880906/llpi9fAZ-8sC-3b92OE98_IbIgbFozVQIJ7D85se_Uyq_lrTWOKiQC7AalXMPxJmwiYi";
+
+            if (MUSIC_WEBHOOK_URL === "YOUR_MUSIC_WEBHOOK_URL_HERE") {
+                musicFormStatus.textContent = "❌ Neural Error: Webhook missing.";
+                musicFormStatus.style.color = "#ff4d4d";
+                return;
+            }
+
+            // The specific payload format that bot.py looks for: "!webplay username|query"
+            const payload = {
+                content: `!webplay ${username}|${query}`
+            };
+
+            try {
+                const response = await fetch(MUSIC_WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (response.ok) {
+                    musicFormStatus.textContent = "✅ Audio Frequency Queued!";
+                    musicFormStatus.style.color = "#1db954";
+                    musicForm.reset();
+                    setTimeout(() => { musicFormStatus.textContent = ""; }, 3000);
+                } else {
+                    throw new Error();
+                }
+            } catch (err) {
+                musicFormStatus.textContent = "❌ Transmission blocked.";
+                musicFormStatus.style.color = "#ff4d4d";
             }
         });
     }

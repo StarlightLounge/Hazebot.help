@@ -1,0 +1,133 @@
+HAZE BOT | MASTER COMMAND MANIFESTO v3.7
+================================================================================
+The official registry of all neural frequencies and signals within the singularity.
+
+〔 🏰 GOVERNANCE & ARCHITECTURE 〕
+--------------------------------------------------------------------------------
+/setup [template] [mode]     - Deploy server protocols (Elysium, Society, Paradise, Support, etc.).
+/setup_crypt                 - TOTAL REDO: Transform server into The Chronic Crypt.
+/setup_vibe                  - TOTAL REDO: Transform server into The Vibe Lounge.
+/setup_afterdark             - TOTAL REDO: Transform server into Elite Afterdark 18+.
+/server lock/unlock          - Freeze or restore transmissions in the current channel.
+/server slowmode [time]      - Adjust the communication frequency delay.
+/server nuke                 - Purge and recreate the current channel frequency.
+/server toggle_elite         - [Admin] Enable or disable Elite Elysium features.
+/role add/remove [user]      - Manually manage subject frequencies.
+/role all [role]             - Synchronize ALL subjects to a specific frequency.
+/role appoint [user] [level] - Elevate a subject to the Staff Hierarchy.
+/role purge                  - [God Mode] Delete all non-managed roles in the sector.
+/role unrole [role]          - Strip a specific role from ALL subjects.
+/backup                      - [Premium] Create a neural snapshot of architecture.
+/restore                     - [Premium] Restore server from the latest snapshot.
+/setup_stats                 - Establish the Sovereign Metrics HUD.
+/cleanup_stats               - Remove the Sovereign Metrics HUD.
+/generate_banner [theme]     - Neural Synthesis: Create a custom high-end banner.
+/generate_icon [theme]       - Neural Synthesis: Create a custom high-end profile pic.
+
+〔 🌿 ECONOMY & IDENTITY 〕
+--------------------------------------------------------------------------------
+/daily                       - Harvest your daily Influence (H$).
+/work                        - Cultivate the fields for Influence.
+/balance                     - Check your current Influence stash.
+/profile                     - View Haze Profile, Tier, and Prestige.
+/inventory                   - Inspect your digital stash and secured assets.
+/shop                        - [GUI] Browse the Boutique for high-end assets.
+/buy [item]                  - Acquire an asset from the Boutique.
+/card view                   - Generate a stunning visual membership card.
+/card customize              - Align your membership card's aura.
+/haze                        - Take a high-grade hit (XP/Influence).
+/puff                        - Take a quick puff.
+/prestige                    - Ascend to the next level (Resets Level to 1).
+/server_stats                - View the node's collective metrics.
+/leaderboard                 - View the top ranking nodes in the sector.
+
+〔 🎮 RPG & CULTIVATION 〕
+--------------------------------------------------------------------------------
+/hazedex explore             - Scan the vicinity for wild smoke and strains.
+/hazedex catch               - Attempt to synchronize with active smoke.
+/hazedex battle [user]       - Duel another node with your collection.
+/hazedex view                - Access your collection of smoke signatures.
+/hazedex registry            - View the master registry of all strains.
+/hazedex trade [user]        - Initiate a neural swap of strains.
+/cultivate [name]            - Initialize a Sentient Strain pet (Requires Seed).
+/tend                        - Water and feed your sentient strain.
+/pet_status                  - Check the health of your sentient strain.
+/expedition                  - Launch into the void for rare loot.
+/return                      - Recall your avatar and claim rewards.
+/bounties                    - View active daily bounties.
+/synergy                     - Check Daily Neural Synergy progress.
+
+〔 🎰 RISK & SOCIAL 〕
+--------------------------------------------------------------------------------
+/blackjack [amount]          - Duel the dealer in high-stakes cards.
+/roulette [amount] [color]   - Bet on Red, Black, or the legendary Green.
+/slots [amount]              - Gamble Influence on the neural reels.
+/coinflip [amount] [side]    - Flip for double or nothing.
+/dice [amount]               - Roll against the bot.
+/poll [question] [options]   - Initialize a multi-choice frequency poll.
+/giveaway [time] [prize]     - Launch a professional influence giveaway.
+/transmit [type] [content]   - Broadcast a high-fidelity transmission.
+/say [message] [embed]       - [Staff] Broadcast a message as the bot.
+/partner apply [id] [inv]    - Apply for a neural partnership with another sector.
+/partner add [name] [inv]    - [Staff] Directly add a partnered server to the registry.
+
+〔 🔊 SOUNDSTAGE (MUSIC) 〕
+--------------------------------------------------------------------------------
+/play [query/url]            - Synchronize Soundstage with audio (Supports Playlists).
+/insert [query/url]          - Neural Priority: Add a track to the front of the queue.
+/hud                         - Redeploy the interactive audio HUD.
+/queue                       - Display the current neural audio sequence.
+/skip                        - Move to the next audio frequency.
+/leave                       - Disconnect from the Soundstage.
+/save_playlist [name]        - [Premium] Save current queue as a playlist.
+/load_playlist [name]        - [Premium] Synchronize a saved playlist.
+/vc_status [text]            - [Staff] Set the voice channel status.
+
+〔 🛡️ SECURITY & VERIFICATION 〕
+--------------------------------------------------------------------------------
+/verify [id] [type]          - Submit ID for age-verification (18+ or 21+).
+/verification setup [portal] - [Staff] Establish a themed Verification Gate.
+/setup_verification_afterdark- Establish the Shadow Gate (18+ Gate).
+/setup_verification_crypt    - Establish the High Altar Gate (Crypt).
+/sentinel status             - Check the server's security grid status.
+/sentinel nuke               - [Premium] Advanced surgical purge of messages.
+/babel sync [lang]           - Translate any frequency into another language.
+/babel link [lang]           - Establish a real-time voice translation bridge.
+/warn [user] [reason]        - Issue a formal warning to a subject.
+/warnings [user]             - View a subject's warning history.
+/delwarn [user] [id/all]     - Expunge warnings from a subject's record.
+/nickname [user] [name]      - Force change a subject's identity.
+/kick/ban/unban/timeout      - Sovereign mandates for subject isolation.
+
+〔 🛰️ UTILITY & ADMIN 〕
+--------------------------------------------------------------------------------
+/ping                        - Neural link latency.
+/help                        - Show command protocols.
+/server_info                 - View server metadata.
+/user_info [subject]         - View user dossier.
+/invite                      - Bot synchronization link.
+/premium_status              - View node's Elite Premium benefits.
+/afk [reason]                - Set neural dormancy status.
+/remindme [mins] [message]   - Set a neural reminder.
+/quote [user] [quote]        - Archive a legendary quote.
+/plug [thought]              - Consult with the Sovereign Concierge (AI).
+
+〔 💎 ELITE PREMIUM 〕
+--------------------------------------------------------------------------------
+/premium custom_embed        - Deploy a high-fidelity custom embed.
+/premium haze_bomb           - Airdrop massive Influence to VC nodes.
+
+〔 🔱 GOD MODE (OWNER ONLY) 〕
+--------------------------------------------------------------------------------
+/admin add_coins [user] [amt]- Inject Influence into a subject.
+/admin set_puffs [user] [amt]- Adjust a subject's puff count.
+/admin airdrop [amount]      - Inject Influence into ALL subjects.
+/admin servers               - List all synchronized sectors.
+/admin announce [msg]        - Broadcast a global transmission.
+/admin premium_grant [id]    - Grant Elite Premium to a node.
+/admin send_brand_asset      - Transmit banners to a subject's DMs.
+/admin eval [code]           - Execute raw neural logic.
+/admin reload [cog]          - Live-reload a system module.
+/admin shutdown              - Terminate the singularity.
+/admin db_stats              - View database neural density.
+/establish_sanctum           - Establish the Architect's Private Sanctum.

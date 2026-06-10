@@ -36,19 +36,19 @@
             <a href="help.html">Documentation</a>
             <a href="#premium">Premium</a>
             <a href="#support">Support Portal</a>
-            <a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="btn btn-primary">Add to Discord</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1511231330682409110&permissions=8&integration_type=0&scope=bot" class="btn btn-primary">Add to Discord</a>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container hero-container">
             <div class="hero-text reveal">
-                <span class="badge">V2.8 NOW LIVE</span>
-                <h1>Elevate Your Server to the <span>Elite Elysium</span></h1>
-                <p>The all-in-one Discord bot featuring a neural AI concierge, metabolic leveling, and a high-stakes economy. Trusted by thousands of top-tier communities.</p>
+                <span class="badge">V3.5 NOW LIVE</span>
+                <h1>Master Your Community Singularity</h1>
+                <p>The all-in-one Discord bot featuring multiple high-fidelity community templates. From the high-end **Elite Elysium** to the dark immersive **Chronic Crypt**.</p>
                 <div class="hero-btns">
-                    <a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="btn btn-primary">Add to Discord</a>
-                    <a href="#" class="btn btn-secondary">Join Community</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1511231330682409110&permissions=8&integration_type=0&scope=bot" class="btn btn-primary">Add to Discord</a>
+                    <a href="help.html" class="btn btn-secondary">Documentation</a>
                 </div>
             </div>
             <div class="hero-image reveal">
@@ -164,6 +164,43 @@
                 <h2>Universal <span>Synchronization</span></h2>
                 <p>High-fidelity audio meets artificial intelligence. Bridge the gap between languages and audio frequencies.</p>
             </div>
+            
+            <!-- NEW: Live Soundstage Feed -->
+            <div class="soundstage-dashboard reveal">
+                <div class="dashboard-grid">
+                    <div class="music-card">
+                        <div class="card-header">
+                            <span class="live-pulse"></span>
+                            <h4>ACTIVE SOUNDSTAGES</h4>
+                        </div>
+                        <div class="active-count">
+                            <h2 id="live-music-sessions">0</h2>
+                            <p>Global Audio Sessions</p>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-header">
+                            <span class="neural-icon">🧬</span>
+                            <h4>COMMUNITY PLAYLISTS</h4>
+                        </div>
+                        <ul id="global-playlist-list" class="playlist-list">
+                            <li class="loading-shimmer">Synchronizing frequencies...</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NEW: Web-to-Voice Controller -->
+                <div class="web-controller" style="margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+                    <h4 style="color: #1db954; margin-bottom: 1rem; font-size: 0.8rem; letter-spacing: 2px;">WEB SOUNDSTAGE CONTROLLER</h4>
+                    <form id="music-form" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <input type="text" id="music-username" placeholder="Discord Username (e.g. hazy#1234)" required style="flex: 1; padding: 1rem; border-radius: 8px; background: #161616; border: 1px solid var(--border); color: white;">
+                        <input type="text" id="music-query" placeholder="Song Name or URL" required style="flex: 2; padding: 1rem; border-radius: 8px; background: #161616; border: 1px solid var(--border); color: white;">
+                        <button type="submit" class="btn btn-primary" style="background: #1db954; color: black; font-weight: 800;">Queue Track</button>
+                    </form>
+                    <p id="music-form-status" style="margin-top: 1rem; font-size: 0.9rem;"></p>
+                </div>
+            </div>
+
             <div class="feature-grid">
                 <div class="feature-card reveal">
                     <div class="feature-icon">🔊</div>
@@ -237,6 +274,59 @@
         </div>
     </section>
 
+    <!-- SECTION: COMMAND REGISTRY -->
+    <section id="commands-lite" class="district">
+        <div class="container">
+            <div class="district-header reveal">
+                <span class="badge">NEURAL COMMAND REGISTRY</span>
+                <h2>Core Community <span>Protocols</span></h2>
+                <p>Interact with the singularity using our high-fidelity command suite. From daily harvests to high-stakes duels.</p>
+            </div>
+            
+            <div class="command-grid-home reveal">
+                <div class="cmd-category">
+                    <h4>🌿 ECONOMY</h4>
+                    <ul>
+                        <li><code>/daily</code> — Harvest influence</li>
+                        <li><code>/work</code> — Cultivate wealth</li>
+                        <li><code>/shop</code> — Browse Boutique</li>
+                        <li><code>/profile</code> — View neural tier</li>
+                    </ul>
+                </div>
+                <div class="cmd-category">
+                    <h4>🎮 RPG & RISK</h4>
+                    <ul>
+                        <li><code>/hazedex explore</code> — Scan void</li>
+                        <li><code>/hazedex battle</code> — Duel nodes</li>
+                        <li><code>/blackjack</code> — Risk influence</li>
+                        <li><code>/roulette</code> — Spin the wheel</li>
+                    </ul>
+                </div>
+                <div class="cmd-category">
+                    <h4>🔊 SOUNDSTAGE</h4>
+                    <ul>
+                        <li><code>/play</code> — Anchor frequency</li>
+                        <li><code>/queue</code> — View sequence</li>
+                        <li><code>/hud</code> — Redeploy HUD</li>
+                        <li><code>/skip</code> — Advance track</li>
+                    </ul>
+                </div>
+                <div class="cmd-category">
+                    <h4>🛰️ UTILITY</h4>
+                    <ul>
+                        <li><code>/info server</code> — Node metadata</li>
+                        <li><code>/avatar</code> — Extract aura</li>
+                        <li><code>/ping</code> — Neural latency</li>
+                        <li><code>/help</code> — Full manifesto</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="registry-cta reveal">
+                <a href="help.html" class="btn btn-secondary">View Full Manifesto (30+ Commands)</a>
+            </div>
+        </div>
+    </section>
+
     <section id="premium" class="pricing">
         <div class="container">
             <div class="section-header reveal">
@@ -253,7 +343,7 @@
                         <li>✦ Standard Leveling</li>
                         <li>✦ Community Support</li>
                     </ul>
-                    <a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="btn btn-secondary">Initialize Free</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1511231330682409110&permissions=8&integration_type=0&scope=bot" class="btn btn-secondary">Initialize Free</a>
                 </div>
                 <div class="pricing-card featured reveal">
                     <div class="featured-badge">MOST POPULAR</div>
@@ -304,12 +394,50 @@
         </div>
     </section>
 
+    <!-- DISTRICT: DEVELOPER APPLICATION -->
+    <section id="developer-app" class="support-portal section-alt" style="margin-top: -6rem;">
+        <div class="container">
+            <div class="support-card reveal" style="border-color: #2ecc71;">
+                <div class="support-header">
+                    <span class="badge" style="background: rgba(46, 204, 113, 0.1); color: #2ecc71; margin-bottom: 1rem; display: inline-block;">RECRUITMENT PROTOCOL</span>
+                    <h2 style="color: #2ecc71;">Cultivator Application</h2>
+                    <p>Are you an elite engineer? Apply to join the Sovereign Development Team and help cultivate the next generation of Haze Bot modules.</p>
+                </div>
+                <form id="dev-form" class="support-form">
+                    <div class="form-group">
+                        <label>Discord Username</label>
+                        <input type="text" id="dev-username" placeholder="e.g. CodeNinja#1234" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Primary Discipline</label>
+                        <select id="dev-role">
+                            <option value="Python / Discord.py">Python / Discord.py (Bot Core)</option>
+                            <option value="Frontend Web (HTML/JS)">Frontend Web (HTML/CSS/JS)</option>
+                            <option value="Backend API (MongoDB)">Backend API / Database (MongoDB)</option>
+                            <option value="UI/UX & Graphic Design">UI/UX & Graphic Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Portfolio / GitHub Link (Optional)</label>
+                        <input type="url" id="dev-portfolio" placeholder="https://github.com/yourname">
+                    </div>
+                    <div class="form-group">
+                        <label>Experience & Motivation</label>
+                        <textarea id="dev-experience" rows="5" placeholder="Detail your coding experience and why you want to join the Elite Elysium team..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" style="background: #2ecc71; color: #000;">Submit Application</button>
+                    <div id="dev-form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section class="cta">
         <div class="container">
             <div class="cta-card reveal">
                 <h2>Ready to stabilize your frequency?</h2>
                 <p>Join thousands of servers already using the Haze Bot protocol.</p>
-                <a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="btn btn-primary">Add to Discord</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1511231330682409110&permissions=8&integration_type=0&scope=bot" class="btn btn-primary">Add to Discord</a>
             </div>
         </div>
     </section>
@@ -334,7 +462,7 @@
                     <div class="link-group">
                         <h4>Resources</h4>
                         <a href="https://github.com">GitHub</a>
-                        <a href="https://discord.gg/TFC7YdumkF">Support Server</a>
+                        <a href="https://discord.gg/CSwYkE57DE">Support Server</a>
                         <a href="help.html">Full Command List</a>
                     </div>
                     <div class="link-group">

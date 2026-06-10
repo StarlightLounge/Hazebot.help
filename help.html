@@ -25,6 +25,7 @@
         .command-ref { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
         .command-ref code { color: var(--primary-gold); font-weight: 700; font-size: 1.1rem; }
         .command-ref .desc { color: var(--text-white); margin-top: 0.5rem; display: block; }
+        .command-group-title { color: var(--primary-gold); font-weight: 800; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; margin: 3rem 0 1.5rem; border-left: 3px solid var(--primary-gold); padding-left: 1rem; }
         
         @media (max-width: 992px) {
             .docs-container { grid-template-columns: 1fr; }
@@ -44,7 +45,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#features">Features</a></li>
                 <li><a href="index.html#support">Support Portal</a></li>
-                <li><a href="https://discord.com/oauth2/authorize?client_id=1479184135963541575&permissions=8&scope=bot+applications.commands" class="nav-btn">Add Bot</a></li>
+                <li><a href="https://discord.com/oauth2/authorize?client_id=1511231330682409110&permissions=8&integration_type=0&scope=bot" class="nav-btn">Add Bot</a></li>
             </ul>
         </div>
     </nav>
@@ -55,9 +56,9 @@
             <ul>
                 <li><a href="#getting-started" class="active">Getting Started</a></li>
                 <li><a href="#economy">The Exchange (Economy)</a></li>
-                <li><a href="#ai-concierge">Sovereign AI</a></li>
-                <li><a href="#leveling">Astral Ascension</a></li>
-                <li><a href="#commands">Full Command List</a></li>
+                <li><a href="#gaming">Gaming Sector (Gamble)</a></li>
+                <li><a href="#music">Soundstage (Audio)</a></li>
+                <li><a href="#commands">Full Manifesto</a></li>
             </ul>
         </aside>
 
@@ -65,74 +66,102 @@
             <section id="getting-started">
                 <h1>Getting Started</h1>
                 <p>Welcome to the Elite Elysium protocol. Haze Bot is designed to be the ultimate companion for your Discord community, blending advanced AI with a deeply engaging social economy.</p>
-                <h2>Quick Setup</h2>
-                <p>To initialize the bot in your server, ensure you have the Administrator permission and use the following command:</p>
+                <h2>1-Click Infrastructure</h2>
+                <p>To initialize the bot in your server, use one of our specialized transformation commands. This will autonomously build your community's architecture.</p>
                 <div class="command-ref">
-                    <code>/setup_elysium</code>
-                    <span class="desc">The definitive server transformation command. Purges existing channels/roles and rebuilds the Elysium infrastructure.</span>
+                    <code>/setup [template] [mode]</code>
+                    <span class="desc">Deploy a professional architecture. Templates: **Elite Elysium**, **The Chronic Crypt**, **The Vibe Lounge**, **Afterdark 18+**.</span>
                 </div>
-                <p>Alternatively, for a focused support environment:</p>
                 <div class="command-ref">
-                    <code>/setup_support</code>
-                    <span class="desc">Deploys a professional Support Hub with a live ticket system and staff roles.</span>
+                    <code>/setup_crypt</code>
+                    <span class="desc">Shortcut for a total redo of your server into The Chronic Crypt template.</span>
                 </div>
             </section>
 
             <section id="economy">
-                <h2>The Exchange</h2>
-                <p>The Exchange is the heart of the Haze Bot economy. Users can harvest Influence, trade rare seeds, and manage their status within the community.</p>
+                <h2>The Exchange & Boutique</h2>
+                <p>The core of our digital civilization. Users harvest Influence (H$), manage their stash, and purchase high-fidelity assets.</p>
                 <div class="command-ref">
-                    <code>/harvest</code>
-                    <span class="desc">Gather Influence from your current cultivation.</span>
+                    <code>/daily</code>
+                    <span class="desc">Harvest your daily Influence stash. Premium nodes receive 2x rewards.</span>
                 </div>
                 <div class="command-ref">
-                    <code>/boutique</code>
-                    <span class="desc">Browse the exclusive shop for rare seeds, roles, and upgrades.</span>
+                    <code>/shop</code>
+                    <span class="desc">[GUI] Browse the Boutique for glassware, sentient seeds, and elite status badges.</span>
                 </div>
                 <div class="command-ref">
-                    <code>/trade</code>
-                    <span class="desc">Exchange Influence or items with other members of the Elysium.</span>
+                    <code>/inventory</code>
+                    <span class="desc">Inspect your current digital stash and secured assets.</span>
                 </div>
             </section>
 
-            <section id="ai-concierge">
-                <h2>Sovereign AI Concierge</h2>
-                <p>Powered by neural network protocols, the Sovereign Concierge is your direct link to the bot's intelligence.</p>
+            <section id="gaming">
+                <h2>The Gaming Sector</h2>
+                <p>Risk your Influence in our high-stakes gambling modules to ascend the leaderboard faster.</p>
                 <div class="command-ref">
-                    <code>/plug [thought]</code>
-                    <span class="desc">Consult with the AI. Ask questions, get vibe checks, or automate complex server tasks.</span>
+                    <code>/blackjack [amount]</code>
+                    <span class="desc">[Interactive] Duel the dealer in a high-fidelity card game.</span>
                 </div>
-                <p>The AI also performs automatic "Vibe Checks" in your DMs when you first join the server to ensure frequency alignment.</p>
+                <div class="command-ref">
+                    <code>/roulette [amount] [color]</code>
+                    <span class="desc)Bet on Red, Black, or the legendary Green (14x payout).</span>
+                </div>
             </section>
 
-            <section id="leveling">
-                <h2>Astral Ascension</h2>
-                <p>Our metabolic leveling system rewards quality interactions. As you participate in the community, you earn XP and ascend through tiered prestige roles.</p>
-                <ul>
-                    <li><strong>Tier 1-10:</strong> New Bud & Citizen Stoner</li>
-                    <li><strong>Tier 30+:</strong> Elite Smoker</li>
-                    <li><strong>Tier 100:</strong> Eternal O.G.</li>
-                </ul>
+            <section id="music">
+                <h2>Sovereign Soundstage</h2>
+                <p>High-fidelity audio streaming with real-time HUD control and community playlist synchronization.</p>
+                <div class="command-ref">
+                    <code>/play [query]</code>
+                    <span class="desc">Synchronize the Soundstage with a YouTube/SoundCloud frequency.</span>
+                </div>
+                <div class="command-ref">
+                    <code>/queue</code>
+                    <span class="desc">Display the currently synchronizing neural audio sequence.</span>
+                </div>
             </section>
 
             <section id="commands">
-                <h2>Command Manifesto</h2>
-                <div class="command-ref">
-                    <code>/profile</code>
-                    <span class="desc">View your Digital Membership Card and level progress.</span>
-                </div>
-                <div class="command-ref">
-                    <code>/explore</code>
-                    <span class="desc">RPG Module: Search the void for rare strains and artifacts.</span>
-                </div>
-                <div class="command-ref">
-                    <code>/play [query]</code>
-                    <span class="desc">Sync the Soundstage with high-fidelity audio from YouTube/SoundCloud.</span>
-                </div>
-                <div class="command-ref">
-                    <code>/prestige</code>
-                    <span class="desc">Transcend to the next tier of existence upon reaching max level.</span>
-                </div>
+                <h2>Command Manifesto v3.6</h2>
+                
+                <div class="command-group-title">🏰 Governance & Architecture</div>
+                <div class="command-ref"><code>/setup</code><span class="desc">Deploy server protocols (Elysium, Crypt, Vibe, Afterdark).</span></div>
+                <div class="command-ref"><code>/setup_crypt</code><span class="desc">TOTAL REDO: Transform server into The Chronic Crypt.</span></div>
+                <div class="command-ref"><code>/server lock/unlock</code><span class="desc">Freeze or restore transmissions in the current channel.</span></div>
+                <div class="command-ref"><code>/role all [role]</code><span class="desc">Synchronize ALL subjects to a specific frequency.</span></div>
+                <div class="command-ref"><code>/backup</code><span class="desc">[Premium] Create a neural snapshot of architecture.</span></div>
+                <div class="command-ref"><code>/restore</code><span class="desc">[Premium] Restore server from the latest snapshot.</span></div>
+
+                <div class="command-group-title">🌿 Economy & Identity</div>
+                <div class="command-ref"><code>/daily</code><span class="desc">Harvest your daily Influence (H$).</span></div>
+                <div class="command-ref"><code>/profile</code><span class="desc">View Haze Profile, Tier, and Prestige.</span></div>
+                <div class="command-ref"><code>/shop</code><span class="desc">[GUI] Browse the Boutique for high-end assets.</span></div>
+                <div class="command-ref"><code>/card view</code><span class="desc">Generate a stunning visual membership card.</span></div>
+                <div class="command-ref"><code>/prestige</code><span class="desc">Ascend to the next level (Resets Level to 1).</span></div>
+
+                <div class="command-group-title">🎮 RPG & Cultivation</div>
+                <div class="command-ref"><code>/hazedex explore</code><span class="desc">Scan the vicinity for wild smoke signatures.</span></div>
+                <div class="command-ref"><code>/hazedex battle</code><span class="desc">Duel another node with your collection.</span></div>
+                <div class="command-ref"><code>/cultivate [name]</code><span class="desc">Initialize a Sentient Strain (Requires Seed).</span></div>
+                <div class="command-ref"><code>/expedition</code><span class="desc">Launch into the void for rare loot.</span></div>
+                <div class="command-ref"><code>/synergy</code><span class="desc">Check Daily Synergy progress for XP boosts.</span></div>
+
+                <div class="command-group-title">🎰 Risk & Social</div>
+                <div class="command-ref"><code>/blackjack</code><span class="desc">Duel the dealer in high-stakes cards.</span></div>
+                <div class="command-ref"><code>/giveaway</code><span class="desc">Launch a professional influence giveaway.</span></div>
+                <div class="command-ref"><code>/transmit</code><span class="desc">Broadcast a high-fidelity transmission.</span></div>
+                <div class="command-ref"><code>/say [message]</code><span class="desc">[Staff] Broadcast a message as the bot.</span></div>
+
+                <div class="command-group-title">🤝 Alliances & Commerce</div>
+                <div class="command-ref"><code>/partner apply</code><span class="desc">Apply for a neural partnership alliance.</span></div>
+                <div class="command-ref"><code>/sponsor post</code><span class="desc">[Partners] Post professional sponsor transmissions.</span></div>
+
+                <div class="command-group-title">🛡️ Security & Verification</div>
+                <div class="command-ref"><code>/verify</code><span class="desc">Submit ID for surgical age-verification.</span></div>
+                <div class="command-ref"><code>/warn [user]</code><span class="desc">Issue a formal warning to a subject.</span></div>
+                <div class="command-ref"><code>/warnings [user]</code><span class="desc">View a subject's warning history.</span></div>
+                <div class="command-ref"><code>/nickname [user]</code><span class="desc">Force change a subject's identity.</span></div>
+                <div class="command-ref"><code>/kick/ban/timeout</code><span class="desc">Sovereign mandates for subject isolation.</span></div>
             </section>
         </article>
     </main>
