@@ -1,8 +1,8 @@
 {
-  "serverCount": 5,
-  "userCount": 307,
+  "serverCount": 4,
+  "userCount": 235,
   "influenceHarvested": "1.5M+",
-  "activeSoundstages": 1,
+  "activeSoundstages": 0,
   "globalPlaylists": [
     {
       "name": "test",
